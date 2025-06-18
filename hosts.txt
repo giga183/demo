@@ -1,0 +1,1 @@
+$exePath = "C:\Program Files\Adobe\Adobe Photoshop 2023\Photoshop.exe"; New-NetFirewallRule -DisplayName "Block Photoshop Inbound" -Direction Inbound -Program $exePath -Action Block -Profile Any; New-NetFirewallRule -DisplayName "Block Photoshop Outbound" -Direction Outbound -Program $exePath -Action Block -Profile Any
